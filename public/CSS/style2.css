@@ -1,0 +1,126 @@
+/* ***********card start styling****** */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.card_imge{
+    background-color: #f6f6f6;
+    width: 230px;
+    height: 480px;
+    text-align: center;
+}
+.card_imge1{
+    height: 0px;
+   
+}
+.grid-style{
+    margin: auto;
+}
+.card_imge h6{
+    padding-top: 20px;
+}
+.card_imge img{
+    width: 230px;
+    height: 230px;
+    
+}
+.grid-style{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    padding: 20px;
+    max-width: 1200px;
+    width: 100%;
+}
+.card_imge button{
+    padding: 8px;
+    background-color: #DA3936;
+    color: white;
+    border: none;
+    
+}
+#main{
+    background-color: #DA3936;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+}
+@media (max-width: 990px) {
+    .grid-style {
+        grid-template-columns: repeat(3, 1fr);
+        text-align: center;
+    }
+    .card_imge img{
+        width: 250px;
+        height: 250px;
+    }
+    .card_imge{
+        width: 250px;
+        height: 480px;
+    }
+    .card_imge1{
+        height: 0px;
+    }
+}
+
+@media (max-width: 810px) {
+    .grid-style {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .card_imge img{
+        width: 280px;
+        height: 480px;
+    }
+    .card_imge{
+        width: 280px;
+        height: 330px;
+    }
+    .card_imge1{
+        height: 0px;
+    }
+}
+@media (max-width: 610px) {
+    .grid-style {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .card_imge img{
+        width: 180px;
+        height: 180px;
+    }
+    .card_imge{
+        width: 180px;
+        height: 480px;
+    }
+    .card_imge1{
+        height: 0px;
+    }
+    .mainu-icon{
+        left: 70%;
+    }
+    .row>*{
+        padding-right: 0;
+        padding-left: 0;
+    }
+}
+@media (max-width: 400px) {
+    .grid-style {
+        grid-template-columns: 1fr;
+    }
+    .row>*{
+        padding-right: 0;
+        padding-left: 0;
+    }
+    .card_imge img{
+        width: 280px;
+        height: 280px;
+    }
+    .card_imge{
+        width: 280px;
+        height: 450px;
+    }
+    .card_imge1{
+        height: 0px;
+    }
+}
+/* ***********card end styling****** */

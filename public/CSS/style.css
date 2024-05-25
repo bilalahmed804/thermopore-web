@@ -1,0 +1,155 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+.imge img{
+    border-right: 2px solid #D93936;
+}
+.imge img{
+    width: 250px;
+    height: 40px;
+}
+nav{
+    background-color:#052730;
+    height: 90px;
+}
+
+.bordernum{
+    text-decoration: none;
+    color: white;
+    font-weight:500;
+    font-size: 17px;
+
+}
+.bordernum1{
+    text-decoration: none;
+    color: white;
+    font-weight:500;
+    font-size: 17px;
+}
+.active{
+    color: #D93936 !important;
+}
+.navber2> a{
+    text-decoration: none;
+    color: white;
+    font-weight:500;
+    font-size: 17px;
+    padding: 0px 5px 0px 5px;
+}
+.row .navber2 a:hover{
+    color: #D93936;
+        transition: 0.5s;
+}
+.bordernum{
+    border-right: 2px solid #D93936;
+}
+.manu-icon{
+    font-size: 40px;
+    color: white;
+}
+
+.mainu-icon{
+    display: none;
+}
+.mainu-icon i{
+    color: #fff;
+    font-size: 30px;
+    cursor: pointer;
+}
+#menulist{
+    max-height:0px ;
+    transition: max-height 0.5s ease;
+}
+#carouselExampleCaptions{
+    height: 540px;
+    transition:top 0.5s ease ;
+}
+.carousel-item img{
+    position: relative;
+    top: 0;
+    height: 540px;
+}
+@media (max-width:575px){
+
+    .mainu-icon i{
+        position: absolute;
+        left: 30px;
+    }
+    .imge img{
+        border: none;
+    }
+}
+@media (max-width:575px) {
+    .row{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .bordernum{
+        font-weight:200;
+        font-size: 12px;
+    }
+    .bordernum1{
+        font-weight:200;
+        font-size: 12px;
+    }
+    #carouselExampleCaptions{
+        height: 380px;
+    }
+    .carousel-item img{
+        height: 380px;
+        
+    }
+}
+@media (max-width:768px) {
+    nav #menulist{
+        position: absolute;
+        top: 68px;
+        left: 0;
+        right: 0;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        gap: 0;
+        overflow: hidden;
+        width: 100%;
+        z-index: 1;
+    }
+    nav #menulist a{
+        background-color: white;
+        color: black;
+        padding: 10px 0px 10px 0px;
+    }
+    nav #menulist .active{
+        background-color: #D93936;
+        color: #fff !important;
+    }
+    nav #menulist a:hover{
+        background-color: #D93936;
+        color: white;
+        border-radius: 5px;
+    }
+    nav .navber2{
+        padding: 0px;
+    }
+    .mainu-icon{
+        display: block;
+        position: absolute;
+        top: 30px;
+        left: 93%;
+    }
+    .imge img{
+        width: 250px;
+        height: 40px;
+    }
+    nav{
+        background-color:#052730;
+        height: 68px;
+    }
+}
